@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*========== Global Styles ============*/
+
+* {
+  scroll-behavior: smooth;
+}
+
+.sidebar {
+  animation: slide-sidebar 0.5s ease;
+}
+
+@keyframes slide-sidebar {
+  0% {
+    transform: translateY(50px);
+  }
+  100% {
+    transform: translateY(0)
+  }
+}
+
+.bg-black-gradient {
+  background: linear-gradient(180deg,  rgb(0,0,0, 0.9), rgb(134, 129, 129));
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
