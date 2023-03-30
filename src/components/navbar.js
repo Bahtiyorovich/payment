@@ -7,10 +7,10 @@ import { useState } from 'react'
 const Navbar = () => {
 
   const [togglebtn, setTogglebtn] = useState(false)
-
   const [active, setActive] = useState('Home')
-
+  
   const toggleHandler = () => setTogglebtn(prev => !prev)
+  const activeHandler = id => setActive(id)
 
   return (
     <div className={`w-full py-2 ${styles.flexBetween}`}>
@@ -23,10 +23,10 @@ const Navbar = () => {
       <ul className='list-none sm:flex hidden justify-end items-center flex-1'>
         {navigationLinks.map((nav, idx) => (
           <li key={nav.id} 
-            className={`font-montserrat font-normal cursor-pointer text-[16px] text-white 
+            className={`font-montserrat font-normal cursor-pointer text-[16px] text-lightWhite 
             ${idx === navigationLinks.length - 1 ? 'mr-0' : 'mr-10'}
             ${active === nav.id ? 'text-white' : 'text-lightWhite'}
-            hover:text-lightWhite transition-all duration-500`}>
+            hover:text-white transition-all duration-500`}>
               {nav.title}
           </li>
         ))}
@@ -45,14 +45,16 @@ const Navbar = () => {
         <ul className='list-none flex justify-end items-center flex-1'>
           {navigationLinks.map((nav, idx) => (
             <li key={nav.id} 
-              className={`font-montserrat font-normal cursor-pointer text-[16px] text-white 
-              ${idx === navigationLinks.length - 1 ? 'mr-0' : 'mr-10'}
-              ${active === nav.id ? 'text-white' : 'text-lightWhite'}
-              hover:text-lightWhite transition-all duration-500`}>
+              className={`font-montserrat font-normal cursor-pointer text-[16px] text-lightWhite 
+                ${idx === navigationLinks.length - 1 ? 'mr-0' : 'mr-10'}
+                ${active === nav.id ? 'text-white' : 'text-lightWhite'}
+                hover:text-white transition-all duration-500`}
+              onClick={() => activeHandler(nav.id)}
+              >
                 {nav.title}
             </li>
-        ))}
-      </ul>
+          ))}
+        </ul>
         </div>
       </div>
     </div>

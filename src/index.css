@@ -27,7 +27,9 @@
   background: linear-gradient(180deg,  rgb(0,0,0, 0.9), rgb(134, 129, 129));
 }
 
-
+.bg-discount-gradient {
+  background: linear-gradient(130deg, #272727 0%, #11101d 100%);
+}
 
 
 

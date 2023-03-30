@@ -4,7 +4,7 @@ export const navigationLinks = [
         title: 'Bosh sahifa',
     },
     {
-        id: 'features',
+        id: 'Features',
         title: 'Xizmatlar',
     },
     {
