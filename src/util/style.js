@@ -15,6 +15,13 @@ export const styles = {
 }
 
 
+export const layout = {
+    section: `flex md:flex-row flex-col ${styles.paddingY}`,
+    sectionImg: `flex-1 ${styles.flexStart} flex-col`,
+    sectionImgReverse: `flex-1 flex ${styles.flexCenter} `,
+    sectionInfo: `flex-1 flex-col ${styles.flexStart} md:mr-10 mr-0 md:mt-0 mt-10 relative`,
+}
+
 
 
 

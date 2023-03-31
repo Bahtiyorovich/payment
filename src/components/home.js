@@ -4,7 +4,7 @@ import {Button} from './index';
 
 const Home = () => {
     return (
-        <section id="home" className={`flex md:flex-row flex-col ${styles.paddingY}`}>
+        <section id="home" className={`flex md:flex-row flex-col ${styles.paddingY} mt-[30px]`}>
             {/* Animation Img */}
             <div className={`mx-20 flex-1 ${styles.flexStart} md:my-0 my-10 h-[610px] relative robot`}>
                 <img src={homeRobot} alt='homeRobot' className="w-[100%] h-[100%] relative z-10 rounded-sm"/>
@@ -25,8 +25,8 @@ const Home = () => {
 
                 {/* Description */}
                 <p className={`${styles.paragraph} mt-5 max-w-[550px]`}>
-                What is Lorem Ipsum?
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                    What is Lorem Ipsum?
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                 </p>
 
                 {/* Getting Started */}
