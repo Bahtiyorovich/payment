@@ -4,7 +4,7 @@ import {Button} from './index';
 
 const Home = () => {
     return (
-        <section id="home" className={`flex md:flex-row flex-col ${styles.paddingY} mt-[30px]`}>
+        <section id="home" className={`flex md:flex-row flex-col ${styles.paddingY}`}>
             {/* Animation Img */}
             <div className={`mx-20 flex-1 ${styles.flexStart} md:my-0 my-10 h-[610px] relative robot`}>
                 <img src={homeRobot} alt='homeRobot' className="w-[100%] h-[100%] relative z-10 rounded-sm"/>
@@ -33,9 +33,9 @@ const Home = () => {
                 <Button styles={`mt-3 text-lightWhite`}/>
 
                 {/* Gradient Style  */}
-                <div className="absolute z-[0] w-[40%] h-[35%] top-0 blue-gradient"></div>
+                {/* <div className="absolute z-[0] w-[40%] h-[35%] top-0 blue-gradient"></div>
                 <div className="absolute z-[1] w-[80%] h-[80%] rounded-full bottom-40 white-gradient "></div>
-                <div className="absolute z-[0] w-[50%] h-[50%] right-20 bottom-20 pink-gradient "></div>
+                <div className="absolute z-[0] w-[50%] h-[50%] right-20 bottom-20 pink-gradient "></div> */}
             </div>
 
         </section>

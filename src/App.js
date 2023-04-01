@@ -1,4 +1,4 @@
-import { Home, Navbar, Statistics, Contract, Billing, Business } from "./components"
+import { Home, Navbar, Statistics, Contract, Billing, Business, CTA, Testimonials, Clients, Footer } from "./components"
 import {styles} from './util/style';
 
 
@@ -28,8 +28,14 @@ const App = () => {
             <Billing/>
             {/* Bussines */}
             <Business/>
+            {/* Testimonials */}
+            <Testimonials/>
+            {/* Clients */}
+            <Clients/>
             {/* CTA */}
+            <CTA/>
             {/* Footer */}
+            <Footer/>
         </div>
       </div>
 

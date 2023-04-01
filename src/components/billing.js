@@ -4,7 +4,7 @@ import {Button} from './'
 
 const Billing = () => {
   return (
-    <section id="product" className={layout.sectionReverse}>
+    <section id="products" className={layout.sectionReverse}>
       <div className={layout.sectionImgReverse}>
         <img src={card2} alt="payme-card" className="w-[100%] h-[90%] relative z-5"/>
       </div>
@@ -19,7 +19,7 @@ const Billing = () => {
           <img src={google} alt="google" className="w-[129px] h-[42px] object-cover mr-5 cursor-pointer"/>
           <img src={appStore} alt="appStore" className="w-[129px] h-[42px] object-cover mr-5 cursor-pointer"/>
         </div>
-        <Button styles={`${styles.paddingX} sm:m-[65px] m-[25px] `}/>
+        <Button styles={` sm:m-[65px] m-[25px] `}/>
       </div>
     </section>
   )
